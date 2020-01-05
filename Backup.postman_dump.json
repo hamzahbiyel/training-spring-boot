@@ -1,0 +1,399 @@
+{
+	"version": 1,
+	"collections": [
+		{
+			"id": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+			"name": "Postman Echo",
+			"description": "Postman Echo is service you can use to test your REST clients and make sample API calls. It provides endpoints for `GET`, `POST`, `PUT`, various auth mechanisms and other utility endpoints.\n\nThe documentation for the endpoints as well as example responses can be found at [https://postman-echo.com](https://postman-echo.com/?source=echo-collection-app-onboarding)",
+			"auth": null,
+			"events": null,
+			"variables": [],
+			"order": [],
+			"folders_order": [
+				"075cdfde-e9db-47b5-9777-921febed0ce2"
+			],
+			"protocolProfileBehavior": {},
+			"folders": [
+				{
+					"id": "075cdfde-e9db-47b5-9777-921febed0ce2",
+					"name": "Produits",
+					"description": null,
+					"auth": null,
+					"events": null,
+					"collection": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"folder": null,
+					"order": [
+						"4dfb77d6-a274-427e-ba2c-d9cd87ce7e68",
+						"174deabc-1dde-49ec-bd46-f1cbba59c7e7",
+						"f5e05d56-d66e-488f-9a62-9caf718d67d8",
+						"d0e33ee8-edff-4b69-8444-1358de89616c",
+						"a70c8cee-b3a7-4f9d-a64b-7318358b6694",
+						"d713e23c-fbb2-4a45-a5a6-0c2781898ca7",
+						"0f253477-f8c7-4b7b-b6ea-d7cdcf441366"
+					],
+					"folders_order": [],
+					"protocolProfileBehavior": {},
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"folderId": "075cdfde-e9db-47b5-9777-921febed0ce2"
+				}
+			],
+			"requests": [
+				{
+					"id": "0f253477-f8c7-4b7b-b6ea-d7cdcf441366",
+					"name": "supprimerProduit",
+					"url": "localhost:9090/Produits/5",
+					"description": "",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"description": "",
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"type": "text",
+							"value": "application/json"
+						}
+					],
+					"method": "DELETE",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "password",
+								"value": "123456"
+							},
+							{
+								"key": "username",
+								"value": "ADMIN"
+							}
+						]
+					},
+					"events": [],
+					"folder": "075cdfde-e9db-47b5-9777-921febed0ce2",
+					"currentHelper": "basicAuth",
+					"helperAttributes": {
+						"id": "basic",
+						"username": "ADMIN",
+						"password": "123456"
+					},
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"rawModeData": "",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "174deabc-1dde-49ec-bd46-f1cbba59c7e7",
+					"name": "getProduits",
+					"url": "localhost:9090/Produits",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"description": "",
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"type": "text",
+							"value": "application/x-www-form-urlencoded"
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "password",
+								"value": "123456"
+							},
+							{
+								"key": "username",
+								"value": "user"
+							}
+						]
+					},
+					"events": [],
+					"folder": "075cdfde-e9db-47b5-9777-921febed0ce2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"currentHelper": "basicAuth",
+					"helperAttributes": {
+						"id": "basic",
+						"username": "user",
+						"password": "123456"
+					},
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"rawModeData": "",
+					"headers": "Content-Type: application/x-www-form-urlencoded\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "4dfb77d6-a274-427e-ba2c-d9cd87ce7e68",
+					"name": "getAdminProduits",
+					"url": "localhost:9090/AdminProduits",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/x-www-form-urlencoded",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "password",
+								"value": "123456"
+							},
+							{
+								"key": "username",
+								"value": "admin"
+							}
+						]
+					},
+					"events": [],
+					"folder": "075cdfde-e9db-47b5-9777-921febed0ce2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"currentHelper": "basicAuth",
+					"helperAttributes": {
+						"id": "basic",
+						"username": "admin",
+						"password": "123456"
+					},
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"rawModeData": "",
+					"headers": "Content-Type: application/x-www-form-urlencoded\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "a70c8cee-b3a7-4f9d-a64b-7318358b6694",
+					"name": "ajouterProduit",
+					"url": "localhost:9090/Produits",
+					"description": "",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"method": "POST",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "password",
+								"value": "123456"
+							},
+							{
+								"key": "username",
+								"value": "ADMIN"
+							}
+						]
+					},
+					"events": [],
+					"folder": "075cdfde-e9db-47b5-9777-921febed0ce2",
+					"currentHelper": "basicAuth",
+					"helperAttributes": {
+						"id": "basic",
+						"username": "ADMIN",
+						"password": "123456"
+					},
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"rawModeData": "{\n\n\"nom\":\"sss\",\n\"prix\":1234,\n\"prixAchat\":4521\n\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "d0e33ee8-edff-4b69-8444-1358de89616c",
+					"name": "afficherUnProduit",
+					"url": "localhost:9090/Produits/1",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"description": "",
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"type": "text",
+							"value": "application/x-www-form-urlencoded"
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "password",
+								"value": "123456"
+							},
+							{
+								"key": "username",
+								"value": "user"
+							}
+						]
+					},
+					"events": [],
+					"folder": "075cdfde-e9db-47b5-9777-921febed0ce2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"currentHelper": "basicAuth",
+					"helperAttributes": {
+						"id": "basic",
+						"username": "user",
+						"password": "123456"
+					},
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"rawModeData": "",
+					"headers": "Content-Type: application/x-www-form-urlencoded\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "d713e23c-fbb2-4a45-a5a6-0c2781898ca7",
+					"name": "updateProduit",
+					"url": "localhost:9090/Produits",
+					"description": "",
+					"data": [],
+					"dataOptions": {
+						"raw": {
+							"language": "json"
+						}
+					},
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"description": "",
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"type": "text",
+							"value": "application/json"
+						}
+					],
+					"method": "PUT",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "username",
+								"value": "ADMIN"
+							},
+							{
+								"key": "password",
+								"value": "123456"
+							}
+						]
+					},
+					"events": [],
+					"folder": "075cdfde-e9db-47b5-9777-921febed0ce2",
+					"currentHelper": "basicAuth",
+					"helperAttributes": {
+						"id": "basic",
+						"username": "ADMIN",
+						"password": "123456"
+					},
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"rawModeData": " {\n        \"id\": 4,\n        \"nom\": \"Ballon de volley\",\n        \"prix\": 222,\n        \"prixAchat\":4521\n\n}",
+					"headers": "Content-Type: application/json\n",
+					"pathVariables": {}
+				},
+				{
+					"id": "f5e05d56-d66e-488f-9a62-9caf718d67d8",
+					"name": "trieProduits",
+					"url": "localhost:9090/trieProduits",
+					"description": "",
+					"data": [],
+					"dataOptions": null,
+					"dataMode": "raw",
+					"headerData": [
+						{
+							"description": "",
+							"key": "Content-Type",
+							"name": "Content-Type",
+							"type": "text",
+							"value": "application/x-www-form-urlencoded"
+						}
+					],
+					"method": "GET",
+					"pathVariableData": [],
+					"queryParams": [],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "password",
+								"value": "123456"
+							},
+							{
+								"key": "username",
+								"value": "user"
+							}
+						]
+					},
+					"events": [],
+					"folder": "075cdfde-e9db-47b5-9777-921febed0ce2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"currentHelper": "basicAuth",
+					"helperAttributes": {
+						"id": "basic",
+						"username": "user",
+						"password": "123456"
+					},
+					"collectionId": "f695cab7-6878-eb55-7943-ad88e1ccfd65",
+					"rawModeData": "",
+					"headers": "Content-Type: application/x-www-form-urlencoded\n",
+					"pathVariables": {}
+				}
+			]
+		}
+	],
+	"environments": [
+		{
+			"id": "b1f9a24f-6fb5-4638-a46c-b6a7976be177",
+			"name": "My Workspace - globals",
+			"values": []
+		}
+	],
+	"headerPresets": [],
+	"globals": []
+}

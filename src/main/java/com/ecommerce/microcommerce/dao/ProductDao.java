@@ -17,6 +17,9 @@ public interface ProductDao extends JpaRepository<Product, Integer> {
 
     List<Product> findByNomLike(String recherche);
 
+    @Query("SELECT id, nom, prix , prixAchat FROM Product p ORDER BY p.nom ")
+    List<Product> trierProduct();
+
     @Query("SELECT id, nom, prix FROM Product p WHERE p.prix > :prixLimit")
     List<Product>  chercherUnProduitCher(@Param("prixLimit") int prix);
 }

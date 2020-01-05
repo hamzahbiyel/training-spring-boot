@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.validation.constraints.Min;
 
 @Entity
-//@JsonFilter("monFiltreDynamique")
+@JsonFilter("monFiltreDynamique")
 public class Product {
 
     @Id
@@ -68,6 +68,8 @@ public class Product {
     public void setPrixAchat(int prixAchat) {
         this.prixAchat = prixAchat;
     }
+
+    public int getMarge() {return prix - prixAchat;}
 
     @Override
     public String toString() {
